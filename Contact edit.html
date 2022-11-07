@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<!---------Head--------->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LocoBOT</title>
+	<!--Link to our external CSS file-->
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!---------Body--------->
+<body>
+	<!--Header Area-->
+	<header>
+		<h1>LocoBot</h1>
+	</header>
+	
+	
+	<!--Navbar area-->
+	<nav>
+		<ul>
+			<div class="menuItems1">
+				<li><a href="Index.html">Home</a></li>
+				<li><a href="AI.html">AI & ML</a></li>
+				<li><a href="Robotics.html">Robotics</a></li>
+				<li><a href="About.html">About Us</a></li>
+				<li><a href="Contact.html" class="active">Contact Us</a></li>
+			</div>
+		</ul>
+	</nav>
+	
+	<!--Main area-->
+		<main>
+		<section class="ContactUS_Form">
+			<h2>Please complete the contact form
+				<br>and we will get back to you</h2>
+				<form name="ContactUsForm" method ="POST" action="processform.php">
+					<div class="row">
+						<div class="Col_25">
+							<label for="fname">Your Full Name: </label>
+						</div>
+						<div class="Col_60">
+							<input type="text" id="fname" name="firstname" placeholder="Your name ...">
+						</div>
+					</div>							
+					<div class="row">
+						<div class="Col_25">
+							<label for="eaddress">Your Email address: <span style="color: red; font-style: italic;"> (*required)</span></label>
+						</div>
+						<div class="Col_60">
+							<input type="text" id="eaddress" name="emailaddress" placeholder="Example2003@gmail.com..." required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="Col_25">
+							<label for="sku">Subject:</i></label>
+						</div>
+						<div class="Col_60">
+							<input type="text" id="subject" name="subject" placeholder="Subject of contact...">
+						</div>
+					</div>				
+					<div class="row">
+						<div class="Col_25">
+							<label for="query">More details</label>
+						</div>
+							
+						<div class="col-60">
+							<textarea id="query" maxlength="512" name="cusquery" placeholder="What can we help you with?... Max of 512 charcters" style="height:200px"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="Col_25">
+							<label for="MailoutOption">Would you like to subscribe to our mailing list?</label>
+						</div>
+						<div class="Col_60">
+							<input type="radio" id="yes" name="domestic" value="YES" checked>
+							<label for="yes">YES</label>
+							<input type="radio" id="no" name="domestic" value="NO">
+							<label for="no">NO</label>
+						</div>
+					</div>
+					<div class="button-row">
+						<div class="Submit_Button">				
+							<input onmouseover="PlayThanksSound()" type="submit" value="Submit" >
+						</div>
+						<div class="Reset_Button">
+							<input type="reset" value="Reset">
+						</div>
+					</div>					
+				</form>			
+		</section>
+	</main>
+	
+	
+	<!------Footer area------>
+
+	<footer>
+		<p> Footer text locoBOT Location 1450 gloucester street <br> taradale Napier <br> 4233<br> <br>
+		By Adam Smith <p>
+	</footer>
+
+	<!--Link to JS file-->
+	<script src="JS/javascript.js"></script>	
+</body>
+</html>

@@ -1,0 +1,450 @@
+body {
+	background: #e9f2e6;
+	font-family: "Times New Roman", serif;
+}
+
+* {/*star symbol means all HTML elements*/
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+}
+
+p {
+	text-align: center;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:600px;
+}
+
+h2 {
+	text-align: center;
+}
+
+p_middle{
+	padding: 100px;
+}
+
+header {
+	height: 12vh;
+	color: lightgrey;
+	background-color: black;
+	font-size: 5vh;
+
+	
+	/*Centering both vertical and horizontal*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/*------------ NAVIGATION BAR --------------*/
+
+
+/* -- styling the NAVBAR links -- */
+li a {
+	color:white;
+	text-decoration: none;
+	display: block;
+
+	text-align: center;
+	padding: 14px 16px;
+
+}
+
+
+li a:hover {
+	color: purple;
+}
+
+
+.active {
+	height: 5vh;
+	color: Grey;
+}
+
+
+
+/* -- styling the NAVBAR -- */
+nav {
+	height: 9vh;
+	background-color: red;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+li {
+    float: left;
+}
+
+nav ul {
+	list-style-type: none;
+	overflow: visible;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav ul li {
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+}
+
+
+
+
+/*------------------------------------------*/
+main {
+	min-height: 75vh;
+	background-color: #e9f2e6;
+}
+
+.border {
+	margin-top: 50px;
+	border: 3px solid red;
+	width: 50vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.homeMedia{
+	padding-top: 50px;
+	height: 500px;
+	width: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.centerVideo{
+	display: block;
+	margin: auto;
+
+}
+
+.roboticsMedia{
+	padding-top: 50px;
+	height: auto;
+	width: 40vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.Media{
+	padding-top: 50px;
+	height: 600px;
+	width: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.commonRow{
+	padding-top: 20px;
+	display: flex;
+	flex-direction: row;
+}
+
+.commonColumn{
+	flex: 1;
+	display: block;
+	padding: 10px;
+	margin: 5px;
+}
+
+
+/*-------making the colums and rows-------*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Col_25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.Col_60 {
+  float: left;
+  width: 60%;
+  margin-top: 6px;
+}
+
+/*----styling the slide show------*/
+.Slideshow_Zone {
+	margin-top: 10px;	
+	border: 8px solid blue;
+	width: 50vw;
+}
+
+.Slideshow_Heading {
+	padding: 30px;
+	text-align: center;
+	font-size: 30px;
+}
+
+.Slideshow_Main {
+	overflow: hidden;
+	width: 728px;
+	height: 510px;
+	margin: 0 auto;
+}
+
+.Slideshow_Wrapper {
+	width: 3640px;/* value = 3*slideshow-item-width = 728 * 3 = 2184px because of 3 slides in slideshow*/
+	-webkit-animation: slideshow-item 15s ease infinite;
+}
+
+.Slideshow_Content {
+	float: left;
+	width: 728px;
+	height: 410px;
+}
+
+.Slideshow_Content h4, h2, h3{
+	text-align: center;
+	padding: 10px;
+}
+
+.Slideshow_Content p {
+	text-align: center;
+	padding: 10px;
+}
+
+.Slideshow_Content img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	height:300px;
+	width:300px;
+}
+
+.Slideshow_Content:nth-child(1) {
+	background: yellow;
+}
+
+.Slideshow_Content:nth-child(2) {
+	background: purple;
+}
+
+.Slideshow_Content:nth-child(3) {
+	background: gray;
+}
+
+.Slideshow_Content:nth-child(4) {
+	background: blue;
+}
+
+.Slideshow_Content:nth-child(5) {
+	background: green;
+}
+
+@-webkit-keyframes slideshow-item {
+  10% {margin-left: 0px;}
+  20% {margin-left: -728px;}
+  30% {margin-left: -728px;}
+  40% {margin-left: -1456px;}
+  50% {margin-left: -1456px;}
+  60% {margin-left: -2184px;}
+  70% {margin-left: -2184px;}
+  80% {margin-left: -2912px;}
+  90% {margin-left: -2912px;}
+}
+
+.sideImage {
+	width: 20vw;
+	height: auto;	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+
+.Submit_Button, .Reset_Button {
+	display: inline-block;
+}
+
+
+
+.button-row {
+	text-align: center;
+}
+
+
+
+/*-------styling the contact form-----*/
+
+.ContactUS_Form {
+	margin: 10px 50px 0px 50px;
+	border-radius: 90px;
+	box-shadow: 5px 5px black;
+	background-color: red;
+	padding: 20px;
+}
+
+.ContactUS_Form h2 {
+		text-align: center;
+		padding-bottom: 20px;
+		color: white;
+}
+
+label {
+	padding: 0.8em 0.8em 0.8em 0;
+	display: inline-block;
+}
+
+.ContactUS_Form input[type=text], 
+.ContactUS_Form input[type=number], 
+.ContactUS_Form input[type=email],
+.ContactUS_Form input[type=date], 
+.ContactUS_Form select,
+.ContactUS_Form textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+.ContactUS_Form  input[type=submit]:hover,  
+.ContactUS_Form input[type=reset]:hover {
+  background-color: gray;
+}
+
+.ContactUS_Form  input[type=submit], .ContactUS_Form input[type=reset]{
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  margin: 1em 2em;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 150px;
+  /*float: right;*/
+}
+
+/* -- styling the FOOTER -- */
+footer {
+	
+	margin-top: 10px;
+	height: 10vh;
+	background: black;
+	color: white;
+
+	/*Center the content inside the element*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer p {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------------*/
+/*Retun to top button*/
+
+#Return_Top_Button {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 5px; /* Place the button at the bottom of the page */
+  right: 15px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: blue; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#Return_Top_Button:hover {
+  background-color: black; /* Add a dark-grey background on hover */
+}
+
+/*RESPONSIVE LAYOUT: FOR SMALL DEVICES*/
+@media only screen and (max-width: 876px) {
+	
+	header {
+	height: 15vh;
+	font-size: 3vh;
+	}
+
+
+	nav ul li {
+	font-size: 13px;
+	width: 100vw;
+	}
+
+	nav {
+	height: 300px;
+	}
+
+	.homeMedia {
+		height: auto;
+		width: 40vw;
+	}
+	
+	.commonRow {
+		flex-direction: column;
+	}
+	
+	
+	.border {
+		width: 60vw;
+	}
+		.Slideshow_Wrapper {
+		width: 1700px;/* value = 3*slideshow-item-width = 728 * 3 = 2184px because of 3 slides in slideshow*/
+		-webkit-animation: slideshow-item 15s ease infinite;
+	}
+
+	@-webkit-keyframes slideshow-item {
+	  10% {margin-left: 0px;}
+	  20% {margin-left: -340px;}
+	  30% {margin-left: -340px;}
+	  40% {margin-left: -680px;}
+	  50% {margin-left: -680px;}
+	  60% {margin-left: -1020px;}
+	  70% {margin-left: -1020px;}
+	  80% {margin-left: -1360px;}
+	  90% {margin-left: -1360px;}
+	}
+	
+	.Slideshow_Heading {
+		padding: 30px;
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.Slideshow_Main {
+		overflow: hidden;
+		width: 340px;
+		height: 510px;
+		margin: 0 auto;
+	}
+
+	.Slideshow_Content {
+		float: left;
+		width: 340px;
+		height: 410px;
+	}
+	
+	.Slideshow_Zone {
+		width: 90vw;
+	}
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<!---------Head--------->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LocoBOT</title>
+	<!--Link to our external CSS file-->
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!---------Body--------->
+<body>
+	<!----Button to return the user to top of page---->
+	<button onclick="Return_To_Top()" id="Return_Top_Button" title="Return to top">&#8657;</button>
+	<!--Header Area-->
+	<header>
+		<h1>LocoBot</h1>
+	</header>
+	
+	
+	<!--Navbar area-->
+	<nav>
+		<ul>
+			<div class="menuItems1">
+				<li><a href="Index.html">Home</a></li>
+				<li><a href="AI.html" >AI & ML</a></li>
+				<li><a href="Robotics.html" class="active">Robotics</a></li>
+				<li><a href="About.html">About Us</a></li>
+				<li><a href="Contact.html">Contact Us</a></li>
+			</div>
+		</ul>
+	</nav>
+	
+	<!--Main area-->
+	<main>	
+		<!------------------->
+		<div>
+			<div class="commonRow">
+			
+				<div class="commonColumn">
+					<h2>Spider becomes gripper, its necrobotics</h2>
+					<img class="roboticsMedia" src="MEDIA/spider.png" alt="SPIDER USED AS GRIPPER"/><br>
+				</div>
+				<div class="commonColumn">
+					<p class="center">Robot arms and grippers do important work every hour of every day. They’re used in production lines around the world, toiling virtually ceaselessly outside of their designated maintenance windows.
+
+						They’re typically built out of steel, and powered by brawny hydraulic systems. However, some scientists have gone for a smaller scale approach that may horrify the squeamish. They’ve figured out how to turn a dead spider into a useful robotic gripper.
+						
+						The name of this new Frankensteinian field? Why, it’s necrobotics, of course!<p/>
+				</div>
+			</div>
+			<div class="commonRow">
+				<div class="commonColumn">
+					<h2>Incorporating nanoparticles into a porous hydrogel to propel an aquabot with minimal voltage</h2>
+					<img class="roboticsMedia" src="MEDIA/robotarticle2.jpg" alt="Image of an aquatic robot"/><br>
+				</div>
+				<div class="commonColumn">
+					<p class="center">A team of researchers from Korea University, Ajou University and Hanyang University, all in the Republic of Korea, has created a tiny aquabot propelled by fins made of a porous hydrogel imbued with nanoparticles. In their paper published in the journal Science Robotics, the group describes how the hydrogel works to power a tiny boat and reveals how much voltage was required.
+
+						Scientists and engineers have been working for several years to build tiny, soft robots for use in medical applications and have found that hydrogels are quite suitable for the task. Unfortunately, such materials also have undesirable characteristics, most notably, poor electro-connectivity. In this new effort, the researchers took a new approach to making hydrogels more amenable for use with electricity as a power source—adding conductive nanoparticles.<p/>
+				</div>
+			</div>
+			<div class="commonRow">
+				<div class="commonColumn">
+					<h2>A system that allows users to communicate with others remotely while embodying a humanoid robot</h2>
+					<img class="roboticsMedia" src="MEDIA/robotarticle3.jpg" alt="Image of robot with human"/><br>
+				</div>
+				<div class="commonColumn">
+					<p class="center">Recent technological advancements are opening new and exciting opportunities for communicating with others and visiting places remotely. These advancements include telepresence robots, moving robotic systems that allow users to virtually navigate remote environments and interact with people in these environments.
+
+						Researchers at Hanyang University and Duksung Women's University in South Korea have recently developed a promising telepresence system based on a humanoid robot, a head mounted display, a motion transporter, a voice transporter, and a vision transporter system. <p/>
+				</div>
+			</div>
+			<div class="commonRow">
+				<div class="commonColumn">
+					<h2>Tracking trust in human-robot work interactions</h2>
+					<img class="roboticsMedia" src="MEDIA/robotarticle4.jpg" alt="Image of brain scanner"/><br>
+				</div>
+				<div class="commonColumn">
+					<p class="center">A team of researchers from Korea University, Ajou University and Hanyang University, all in the Republic of Korea, has created a tiny aquabot propelled by fins made of a porous hydrogel imbued with nanoparticles. In their paper published in the journal Science Robotics, the group describes how the hydrogel works to power a tiny boat and reveals how much voltage was required.
+
+						Scientists and engineers have been working for several years to build tiny, soft robots for use in medical applications and have found that hydrogels are quite suitable for the task. Unfortunately, such materials also have undesirable characteristics, most notably, poor electro-connectivity. In this new effort, the researchers took a new approach to making hydrogels more amenable for use with electricity as a power source—adding conductive nanoparticles.<p/>
+				</div>
+			</div>
+		</div>
+
+		<section>
+			<div class="commonRow">
+				<div class="commonColumn">
+					<h3 id="ChosenHeading">Please click on an article in the slide show for more information</h3>
+					<img src="MEDIA/tweezers.jpg" class="sideImage" alt="Image not found" id="ChosenImage">	
+				</div>							
+				<div class="commonColumn">
+					<div class="Slideshow_Zone">
+						<div class="Slideshow_Heading">
+							<h3>More articles you might like</h3>
+						</div>
+						<div class="Slideshow_Main">
+							<div class="Slideshow_Wrapper" >
+								<div class="Slideshow_Content"  onclick="magnets()">
+									<h2>Magnetic sensors track muscle length</h2>
+									<img src="MEDIA/tweezers.jpg" alt="Image not found">
+									<p>Using a simple set of magnets, MIT researchers have come up with a sophisticated way to monitor muscle movements, which they hope will make it easier for people with amputations to control their prosthetic limbs.</p>				
+								</div>
+								<div class="Slideshow_Content" onclick="cubes()">
+									<h2>Reprogrammable materials selectively self-assemble</h2>
+									<img src="MEDIA/cubes.png" alt="Image not found">
+									<p>While automated manufacturing is ubiquitous today, it was once a nascent field birthed by inventors such as Oliver Evans, who is credited with creating the first fully automated industrial process, in flour mill he built and gradually automated in the late 1700s.</p>				
+								</div>
+								<div class="Slideshow_Content" onclick="particles()">
+									<h2>Tiny particles work together to do big things</h2>
+									<img src="MEDIA/particles.jpg" alt="Image not found">
+									<p>Taking advantage of a phenomenon known as emergent behavior in the microscale, MIT engineers have designed simple microparticles that can collectively generate complex behavior, much the same way that a colony of ants can dig tunnels or collect food.</p>				
+								</div>		
+								<div class="Slideshow_Content" onclick="pills()">
+									<h2>Breaking through the mucus barrier</h2>
+									<img src="MEDIA/pills.jpg" alt="Image not found">
+									<p>One reason that it’s so difficult to deliver large protein drugs orally is that these drugs can’t pass through the mucus barrier that lines the digestive tract. This means that insulin and most other “biologic drugs” — drugs consisting of proteins or nucleic acids — have to be injected or administered in a hospital. </p>				
+								</div>	
+								<div class="Slideshow_Content" onclick="battery()">
+									<h2>MIT engineers build a battery-free, wireless underwater camera</h2>
+									<img src="MEDIA/battery.jpg" alt="Image not found">
+									<p>Scientists estimate that more than 95 percent of Earth’s oceans have never been observed, which means we have seen less of our planet’s ocean than we have the far side of the moon or the surface of Mars.</p>				
+								</div>								
+							</div>	
+						</div>	
+				
+					</div>
+				</div>	
+				<div class="For_Sale_Column">		
+					<h3>More article information</h3>
+					<p class="sideImage" id="ChosenArticleInfo">Please select an article in the slide to show the information</p>
+				</div>				
+			</div>
+		</section>
+		
+	</main>
+	
+	
+	<!------Footer area------>
+
+	<footer>
+		<p> Footer text locoBOT <br>
+		By Adam Smith <p>
+	</footer>
+
+	<!--Link to JS file-->
+	<script type="text/javascript" src="JAVASCRIPT/javascript.js"></script>	
+</body>
+</html>
